@@ -1,0 +1,34 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:     #070709;
+  --bg1:    #0d0d12;
+  --bg2:    #13131a;
+  --border: #1e1e2e;
+  --border2:#2a2a3e;
+  --text:   #e8e8f0;
+  --muted:  #4a4a62;
+  --muted2: #6a6a88;
+  --accent: #00ff88;
+  --warn:   #ff6b35;
+  --blue:   #4488ff;
+  --mono:   var(--font-mono), monospace;
+  --sans:   var(--font-syne), sans-serif;
+}
+
+html, body { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 14px; min-height: 100vh; }
+::-webkit-scrollbar { width: 4px; } ::-webkit-scrollbar-track { background: var(--bg); } ::-webkit-scrollbar-thumb { background: var(--border2); }
+
+[data-rk] {
+  --rk-colors-accentColor: #00ff88 !important;
+  --rk-colors-accentColorForeground: #070709 !important;
+  --rk-colors-modalBackground: #0d0d12 !important;
+  --rk-colors-modalBorder: #2a2a3e !important;
+  --rk-colors-modalText: #e8e8f0 !important;
+  --rk-colors-modalTextDim: #6a6a88 !important;
+  --rk-colors-connectButtonBackground: #13131a !important;
+  --rk-colors-connectButtonText: #e8e8f0 !important;
+  --rk-radii-connectButton: 2px !important;
+  --rk-radii-modal: 4px !important;
+  --rk-fonts-body: var(--font-mono), monospace !important;
+}
